@@ -5,7 +5,8 @@ import Link from "next/link";
 import { menus } from "../../../../data/data";
 
 const SidebarDark = () => {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(true)
+
     return (
         <section className="flex gap-6 sticky z-0 top-0 left-0">
             <div

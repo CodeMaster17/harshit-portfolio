@@ -23,52 +23,49 @@ export const GITHUB_URL = " https://github.com/CodeMaster17";
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/harshit-yadav-2b2b2922b/";
 
-export const menus = [
-  { name: "About", link: "/", icon: AiOutlineUser },
-  { name: "Projects", link: "/", icon: AiOutlineAppstoreAdd },
-  { name: "Skills", link: "/addplace", icon: MdComputer },
-  { name: "Experience", link: "/", icon: HiPhotograph },
-  { name: "Contact Me", link: "/addplace", icon: MdCall },
-  { name: "Anchoring", link: "/", icon: GiMicrophone, margin: true },
-  { name: "Technical Lead", link: "/", icon: PiMedalFill },
-  { name: "Enterprenauirship", link: "/", icon: BsBuilding },
-  { name: "Startups", link: "/", icon: RiSettings4Line },
+export const anchoring = [
+  {
+    id: 1,
+    eventName: "DevOps",
+    date: "",
+    topic: "",
+  },
+  {
+    id: 2,
+    eventName: "Stark Expo",
+    date: "",
+    topic: "",
+  },
+  {
+    id: 3,
+    eventName: "Pitcher's Pilot",
+    date: "",
+    topic: "",
+  },
+  {
+    id: 3,
+    eventName: "Project wing",
+    date: "",
+    topic: "",
+  },
 ];
 
-export const sidebarLinks = {
-  home: [
-    {
-      imgURL: "/icons/home.svg",
-      route: "/",
-      label: "Home",
-    },
-    {
-      imgURL: "/icons/about.svg",
-      route: "/about",
-      label: "About",
-    },
-    {
-      imgURL: "/icons/skills.svg",
-      route: "/skills",
-      label: "Skills",
-    },
-    {
-      imgURL: "/icons/projects.svg",
-      route: "/projects",
-      label: "Projects",
-    },
-    {
-      imgURL: "/icons/experience.svg",
-      route: "/experience",
-      label: "Experience",
-    },
-    {
-      imgURL: "/icons/contact.svg",
-      route: "/contact",
-      label: "Contact",
-    },
-  ],
-};
+export const menus = [
+  // { name: "About", link: "/", icon: AiOutlineUser },
+  // { name: "Projects", link: "/", icon: AiOutlineAppstoreAdd },
+  // { name: "Skills", link: "/addplace", icon: MdComputer },
+  // { name: "Experience", link: "/", icon: HiPhotograph },
+  { name: "Contact Me", link: "/under-development", icon: MdCall },
+  {
+    name: "Anchoring",
+    link: "/under-development",
+    icon: GiMicrophone,
+    margin: true,
+  },
+  { name: "Technical Lead", link: "/under-development", icon: PiMedalFill },
+  { name: "Enterprenauirship", link: "/under-development", icon: BsBuilding },
+  { name: "Startups", link: "/under-development", icon: RiSettings4Line },
+];
 
 export const skill = [
   {
@@ -165,44 +162,34 @@ export const companies = [
 
 export const projects = [
   {
+    id: 2,
+    subtitle: "React Js, Framer Motion, Vanilla Css ",
+    title: "DevExchange",
+    description:
+      "A complete frontend site for handling and hiring freelancers all across the world, to make our job easier.",
+    imageSrc: "/assets/projeccts/dev-exchange.svg",
+    linkState: true,
+
+    link: "https://dev-overflow-dqh0gdcm8-codemaster17.vercel.app/",
+  },
+  {
     id: 1,
     subtitle: "React Js , Tailwind Css",
     title: "Maze Official Website",
     description:
-      "Maze officila website built from scratch, using react js, tailwind css, and framer motion.",
+      "Maze officila website built from scratch, using React js, Tailwind css, and framer motion.",
     imageSrc: "/assets/projeccts/maze.svg",
     linkState: true,
     link: "https://mazeapp.in/",
   },
   {
-    id: 2,
-    subtitle: "React Js, Framer Motion, Vanilla Css ",
-    title: "Crazy Tivago Website",
-    description:
-      "A complete frontend site for handling and hiring freelancers all across the world, to make our job easier.",
-    imageSrc: "/",
-    linkState: true,
-
-    link: "https://codemaster17.github.io/freelancehelper.github.io/",
-  },
-  {
     id: 3,
     subtitle: "React Js, Tailwind CSS",
-    title: "Crazy Tivago",
+    title: "Shopify Dashboard",
     description:
       "A complete solution to book flights, trains. hotels in simpler way, in low costs as compared to other websites.",
-    imageSrc: "/",
-    link: "",
+    imageSrc: "/assets/projeccts/shopify-dashboard.jpg",
+    link: "https://shopping-dashboard-yln8.vercel.app/ecommerce",
     linkState: false,
-  },
-  {
-    id: 4,
-    subtitle: "React Js, Syncfusion",
-    title: "Shopping Admin Dashboard",
-    description:
-      "A fintech admin dashboard to manage all the resources, user , user experiences, expenditure, savings, products.",
-    imageSrc: "/",
-    linkState: true,
-    link: "https://shopping-dashboard-yln8.vercel.app/",
   },
 ];

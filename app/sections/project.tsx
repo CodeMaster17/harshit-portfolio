@@ -18,7 +18,7 @@ const Projects = () => {
 
     return (
         <>
-            <div className='w-full shadow-box-shadow  p-4 bg-color-white rounded-[5px]'>
+            <div className='w-full shadow-box-shadow  p-4 bg-color-white rounded-[5px] '>
                 <div className='flex gap-2 border-b-2 pb-2'>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#ADFA1D" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-7 h-7">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
@@ -36,7 +36,7 @@ const Projects = () => {
                                     <AccordionItem value={`item-${index}`} className='shadow-box-shadow px-2 rounded-md mt-2' key={item.id} >
                                         <AccordionTrigger className='flex hover:no-underline'>
                                             <div className='flex items-center gap-4'>
-                                                <div className='w-[40px] h-[40px]  rounded-sm '>
+                                                <div className='w-[30px] h-[30px]  rounded-sm '>
                                                     {item.imageSrc && (
                                                         <Link target='_blank' href={(!item.link) ? "/" : item.link}>
                                                             <Image alt="image" src={item.imageSrc} className='w-full rounded-sm h-full' width={100} height={100} />

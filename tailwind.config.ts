@@ -33,6 +33,13 @@ const config: Config = {
         lg: "15px",
         xl: "20px",
       },
+      fontSize: {
+        sm: "15px",
+        md: "20px",
+        lg: "25px",
+        xl: "30px",
+        anchorHeading: "80px",
+      },
     },
   },
   plugins: [],

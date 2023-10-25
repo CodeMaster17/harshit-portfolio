@@ -1,4 +1,4 @@
-import { GITHUB_URL, INSTAGRAM_URL } from 'app/data/data'
+import { GITHUB_URL, INSTAGRAM_URL, LINKEDIN_URL } from 'app/data/data'
 import Link from 'next/link'
 import React from 'react'
 import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
@@ -28,7 +28,7 @@ const Navbar = () => {
                     <Link href={INSTAGRAM_URL}>
                         <FaInstagram size={30} />
                     </Link>
-                    <Link href={INSTAGRAM_URL}>
+                    <Link href={LINKEDIN_URL}>
                         <FaLinkedinIn size={30} />
                     </Link>
                 </div>
