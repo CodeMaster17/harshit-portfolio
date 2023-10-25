@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import { companies } from "../../data/data"
 import Heading from '../components/Heading/heading'
 import {

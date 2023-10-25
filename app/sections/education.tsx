@@ -1,7 +1,6 @@
 'use client'
 import React from 'react'
 import Heading from '../components/Heading/heading'
-import { education } from '../../svg/svg'
 
 
 

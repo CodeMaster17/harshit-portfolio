@@ -1,7 +1,6 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Montserrat, Dancing_Script } from 'next/font/google'
-import Sidebar from './components/Sidebar/page'
 import Navbar from './components/Navbar/Navbar'
 import SidebarDark from './components/Shared/Sidebar/page'
 
