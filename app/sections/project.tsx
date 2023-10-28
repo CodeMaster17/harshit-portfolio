@@ -10,6 +10,9 @@ import {
 } from "../../components/ui/accordion"
 import Link from 'next/link'
 import Image from 'next/image'
+import { BiLinkExternal, BiLogoReact } from 'react-icons/bi'
+import { AiOutlineGithub } from 'react-icons/ai'
+import IconLoader from '../components/iconLoader'
 
 
 const Projects = () => {
@@ -45,16 +48,50 @@ const Projects = () => {
                                                 </div>
 
                                                 {item.title}
+
                                             </div>
                                         </AccordionTrigger>
                                         <AccordionContent>
-                                            <div className='w-full flex items-center justify-between mt-2'  >
-                                                {/* <Link target="_blank" className='hover:underline font-bold text-lg' href={(!item.companyLink) ? "/" : item.companyLink} >{item.company} </Link> */}
-                                                <div>
-                                                    {/* {item.startDate} - {(!item.endDate) ? "Present" : item.endDate} */}
+                                            <p className='px-4'>
+
+                                                {item.description}
+                                            </p>
+                                            <br />
+                                            <div className=' w-full flex justify-between  items-center px-4'>
+                                                <div className='w-3/4 flex flex-wrap gap-2'  >
+                                                    {item.subtitle.map((icon, index) => {
+                                                        return (
+                                                            <>
+                                                                <span key={index} className='p-1  bg-slate-300 rounded-sm'>
+
+                                                                    {icon} &nbsp;
+                                                                </span>
+                                                            </>
+                                                        )
+                                                    }
+                                                    )}
+                                                </div>
+
+                                                <div className='flex w-1/4 justify-end gap-4 items-center'>
+
+                                                    {item.githubLink &&
+
+                                                        <Link href={item.githubLink} className='flex gap-5' >
+                                                            <AiOutlineGithub
+                                                                size={26}
+                                                                className="cursor-pointer hover:bg-[#ADFA1D] rounded-full"
+                                                            />
+                                                        </Link>
+                                                    }
+                                                    <Link href={item.link} target="_blank" className='flex gap-5' >
+                                                        <BiLinkExternal
+                                                            size={24}
+                                                            className="cursor-pointer hover:bg-[#ADFA1D] rounded-full"
+                                                        />
+                                                    </Link>
                                                 </div>
                                             </div>
-                                            {item.description}
+
 
                                         </AccordionContent>
                                     </AccordionItem>

@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Inter, Montserrat, Dancing_Script } from 'next/font/google'
 import Navbar from './components/Navbar/Navbar'
 import SidebarDark from './components/Shared/Sidebar/page'
+import Head from 'next/head'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -35,11 +36,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="icon" href="/assets/my-app.ico" />
+      </Head>
       <body className={`${montserrat.variable} ${dancingScript.variable}`}>
         <div className='w-full flex bg-color-white'>
           <SidebarDark />
-          <div className='w-full'>
-
+          <div className='w-full '>
             <Navbar />
             {children}
           </div>

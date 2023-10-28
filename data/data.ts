@@ -25,28 +25,33 @@ export const LINKEDIN_URL =
 
 export const anchoring = [
   {
-    id: 1,
-    eventName: "DevOps",
-    date: "",
-    topic: "",
-  },
-  {
     id: 2,
-    eventName: "Stark Expo",
-    date: "",
+    eventName: "Stark Expo  2023",
+    date: "2nd January 2023",
     topic: "",
+    imgUrl: "/assets/anchroing/stark-expo.jpeg",
   },
   {
-    id: 3,
-    eventName: "Pitcher's Pilot",
-    date: "",
+    id: 4,
+    eventName: "Project wing 2023",
+    date: "2nd January 2023",
     topic: "",
+    imgUrl: "/assets/anchroing/project-wing.jpg",
   },
   {
-    id: 3,
-    eventName: "Project wing",
-    date: "",
+    id: 1,
+    eventName: "DevOps 2022",
+    date: "2nd January 2023",
     topic: "",
+    imgUrl: "/assets/anchroing/devops.jpg",
+  },
+
+  {
+    id: 3,
+    eventName: "HacktoberFest  2022",
+    date: "2nd January 2023",
+    topic: "",
+    imgUrl: "/assets/anchroing/hacktoberfest.jpg",
   },
 ];
 
@@ -55,16 +60,16 @@ export const menus = [
   // { name: "Projects", link: "/", icon: AiOutlineAppstoreAdd },
   // { name: "Skills", link: "/addplace", icon: MdComputer },
   // { name: "Experience", link: "/", icon: HiPhotograph },
-  { name: "Contact Me", link: "/under-development", icon: MdCall },
+  { name: "View Everything", link: "/", icon: AiOutlineUser },
+  // { name: "Contact Me", link: "/under-development", icon: MdCall },
   {
     name: "Anchoring",
-    link: "/under-development",
+    link: "/anchoring",
     icon: GiMicrophone,
-    margin: true,
   },
-  { name: "Technical Lead", link: "/under-development", icon: PiMedalFill },
-  { name: "Enterprenauirship", link: "/under-development", icon: BsBuilding },
-  { name: "Startups", link: "/under-development", icon: RiSettings4Line },
+  // { name: "Technical Lead", link: "/lead", icon: PiMedalFill },
+  // { name: "Enterprenauirship", link: "/under-development", icon: BsBuilding },
+  // { name: "Startups", link: "/under-development", icon: RiSettings4Line },
 ];
 
 export const skill = [
@@ -163,33 +168,57 @@ export const companies = [
 export const projects = [
   {
     id: 2,
-    subtitle: "React Js, Framer Motion, Vanilla Css ",
+    subtitle: ["Next Js", "Tailwind CSS", "Shadcn/ui", "MongoDb", "Clerkjs"],
     title: "DevExchange",
     description:
-      "A complete frontend site for handling and hiring freelancers all across the world, to make our job easier.",
+      "This platform developed with Next Js 13.5, Shadcn/Ui helps developers to ask question, post answers,  and even generate answers to their questions, alongwith  voting system for questions asked, helping to build user profile and get badges. It includes features like google, email authentication system with Clerk, code formatting, generating an AI answer, connecting and building like minded community (under development), finding jobs and even more.",
     imageSrc: "/assets/projeccts/dev-exchange.svg",
     linkState: true,
-
+    githubLink: "",
     link: "https://dev-overflow-dqh0gdcm8-codemaster17.vercel.app/",
   },
   {
     id: 1,
-    subtitle: "React Js , Tailwind Css",
-    title: "Maze Official Website",
+    subtitle: ["React", "Tailwind", "Framer  Motion", "Tally Forms"],
+    title: "Maze Website",
     description:
-      "Maze officila website built from scratch, using React js, Tailwind css, and framer motion.",
+      "In collaboration with Maze design team, I am developing Maze Official Website in React and Tailwind CSS, Framer Motion library keeping in mind the responsiveness and performance of the website.Maze official website built from scratch, using React js, Tailwind css, and Framer motion.",
     imageSrc: "/assets/projeccts/maze.svg",
     linkState: true,
+    githubLink: "",
     link: "https://mazeapp.in/",
   },
   {
     id: 3,
-    subtitle: "React Js, Tailwind CSS",
+    subtitle: ["Next Js", "SCSS", "Cloudinary", "Figma"],
+    title: "ABM Technologies",
+    description:
+      "Fully responsive  website developed with Next Js, SCSS, Cloudinary, and Figma designs.",
+    imageSrc: "/assets/projeccts/abm.webp",
+    link: "https://www.abmtechnologies.us/",
+    linkState: true,
+    githubLink: "",
+  },
+  {
+    id: 4,
+    subtitle: ["Javascript", "CSS"],
+    title: "Javascript Quiz Game -  For Mobile",
+    description:
+      "Developed with  pure javascript logic  and css, this quiz game meant to be played on mobile devices.",
+    imageSrc: "/assets/projeccts/quiz-game.jpg",
+    link: "https://yaro-quiz-game.vercel.app/",
+    linkState: true,
+    githubLink: "",
+  },
+  {
+    id: 4,
+    subtitle: ["React", "Tailwind", "Syncfusion", "Material UI"],
     title: "Shopify Dashboard",
     description:
-      "A complete solution to book flights, trains. hotels in simpler way, in low costs as compared to other websites.",
+      "Professional React Js Frontend syncfusion admin dashboard, with robust tables and bar charts, which are styled with Material UI.",
     imageSrc: "/assets/projeccts/shopify-dashboard.jpg",
     link: "https://shopping-dashboard-yln8.vercel.app/ecommerce",
     linkState: false,
+    githubLink: "https://github.com/CodeMaster17/Shopping-Dashboard",
   },
 ];

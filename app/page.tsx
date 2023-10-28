@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className='w-full'>
       {/* <About /> */}
-      <div className='flex w-[95%] mx-auto gap-8  p-6 rounded-[10px]'>
+      <div className='flex w-[80%] mx-auto gap-8  p-6 rounded-[10px]'>
         <div className='flex flex-col w-1/2  gap-8'>
           <div className='w-full flex flex-col gap-8'>
             <About />

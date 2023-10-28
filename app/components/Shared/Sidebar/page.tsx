@@ -5,13 +5,13 @@ import Link from "next/link";
 import { menus } from "../../../../data/data";
 
 const SidebarDark = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     return (
-        <section className="flex gap-6 sticky z-0 top-0 left-0">
+        <section className="flex gap-6 sticky z-20 top-0 left-0">
             <div
                 className={`bg-[#0e0e0e] min-h-screen ${open ? "w-72" : "w-16"
-                    } duration-500 text-gray-100 px-4 `}
+                    } duration-500 text-gray-100 px-4 fixed `}
             >
                 <div className="py-3 flex justify-end">
                     <HiMenuAlt3
@@ -20,13 +20,12 @@ const SidebarDark = () => {
                         onClick={() => setOpen(!open)}
                     />
                 </div>
-                <div className="mt-4 flex flex-col gap-4  fixed">
+                <div className="mt-4 flex flex-col gap-4    fixed  z-20">
                     {menus?.map((menu, i) => (
                         <Link
                             href={menu?.link}
                             key={i}
-                            className={` ${menu?.margin && "mt-5"
-                                } group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
+                            className={`group flex items-center text-sm  gap-3.5 font-medium p-2 hover:bg-gray-800 rounded-md`}
                         >
                             <div>{React.createElement(menu?.icon, { size: "20" })}</div>
                             <h2
@@ -40,7 +39,7 @@ const SidebarDark = () => {
                             </h2>
                             <h2
                                 className={`${open && "hidden"
-                                    } absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit  `}
+                                    } absolute left-48 bg-white font-semibold whitespace-pre text-gray-900 rounded-md drop-shadow-lg px-0 py-0 w-0 overflow-hidden group-hover:px-2 group-hover:py-1 group-hover:left-14 group-hover:duration-300 group-hover:w-fit   `}
                             >
                                 {menu?.name}
                             </h2>
