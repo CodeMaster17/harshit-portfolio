@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+p {
+    color: black;
+    
+}
+
 @layer utilities {
     .bgGradient {
         background-color: #000000;

@@ -8,7 +8,7 @@ const SidebarDark = () => {
     const [open, setOpen] = useState(false)
 
     return (
-        <section className="flex gap-6 sticky z-20 top-0 left-0">
+        <section className=" gap-6 sticky z-20 top-0 left-0 hidden md:block">
             <div
                 className={`bg-[#0e0e0e] min-h-screen ${open ? "w-72" : "w-16"
                     } duration-500 text-gray-100 px-4 fixed `}

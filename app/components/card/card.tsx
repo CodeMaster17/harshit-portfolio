@@ -6,7 +6,7 @@ interface props {
 
 const Card: React.FC<props> = ({ name }) => {
     return (
-        <p className='bg-[#ADFA1D] rounded-[10px] py-1 px-4 text-color-black w-fit'>{name}</p>
+        <p className='bg-[#ADFA1D] rounded-[10px] py-1 md:px-4 px-2 text-color-black w-fit text-sm'>{name}</p>
     )
 }
 

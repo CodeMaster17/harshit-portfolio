@@ -5,23 +5,23 @@ import styles from "./page.module.css"
 
 const Anchoring = () => {
     return (
-        <div className={`border-2 w-full `}>
+        <div className={`w-full border-2 `}>
 
-            <div className=' m-auto w-[80%] mt-4 '>
-                <p className='text-lg mt-8 w-full rounded-md  p-4 shadow-box-shadow'>
+            <div className=' m-auto mt-4 w-[90%] md:w-[80%] '>
+                <p className='mt-8 w-full rounded-md p-4 text-sm shadow-box-shadow md:text-lg'>
                     &quot;Every time I step on that stage with a mic in my hand,
                     <br />
                     I feel like Im setting sail on an endless sea of stories, each waiting to be discovered, shared, and celebrated.&quot;</p>
                 <br />
 
-                <div className={`w-full  flex justify-between `} >
-                    <div className='w-full    relative' >
+                <div className={`flex  w-full justify-between `} >
+                    <div className='relative    w-full' >
                         <video src="/assets/video.mp4" loop autoPlay={true} muted={true} className='w-full '>
 
                         </video>
-                        <div className=' textAboveVideo text2AboveVideo absolute  w-3/4  h-full  top-0 flex justify-left  items-center  bgGradient2'>
-                            <p className='text-anchorHeading text-white ml-4'>
-                                <span className='text-[40px]'>
+                        <div className=' textAboveVideo text2AboveVideo justify-left  bgGradient2  absolute top-0 flex h-full  w-3/4  items-center'>
+                            <p className='ml-4 mt-2 text-[30px] text-white md:mt-0  md:text-[40px]'>
+                                <span className=''>
                                     At
                                 </span>
                                 <br />
@@ -32,7 +32,7 @@ const Anchoring = () => {
                                 </span>
                                 <br />
                                 <br />
-                                <span className='text-[30px] text-highlighter  border-2 p-2'>
+                                <span className='hidden border-2 p-2 text-[15px] text-highlighter md:mt-0  md:block md:text-[30px]'>
 
                                     Pitcher&apos;s pilot event
                                 </span>
@@ -41,7 +41,7 @@ const Anchoring = () => {
                     </div>
                 </div>
 
-                <div className=" mt-8 mb-8 gap-8  flex justify-center items-center ">
+                <div className=" my-8 flex flex-col items-center justify-center  gap-8 md:flex-row ">
                     {anchoring.map((item, index) => {
                         return (
                             <>
@@ -58,10 +58,6 @@ const Anchoring = () => {
                                         <p>
                                             {item.topic}
                                         </p>
-                                        {/* <a href="#" className="button">
-                                            Find out more
-                                            <span className="material-symbols-outlined">arrow_right_alt</span>
-                                        </a> */}
                                     </div>
                                 </div>
 

@@ -129,6 +129,7 @@ export const companies = [
     endDate: "June 2023",
     role: "Freelance web Developer",
     company: "Maze",
+    companyLink: "https://mazeapp.in/",
     src: "/assets/experience/maze.svg",
     description:
       "In collaboration with Maze design team, I am developing Maze Official Website in React and Tailwind CSS, Framer Motion library keeping in mind the responsiveness and performance of the website. - Learnt the art of negotiation and communication with the client.",
@@ -141,7 +142,7 @@ export const companies = [
     company: "Yaro",
     src: "/assets/experience/yaro.jpeg",
     description:
-      "Developed Admin Dashboard in React Js, Redux, and Tailwind CSS with features like CRUD operations, authentication, otp verification, video and image upload, and search filter.",
+    "Developed Admin Dashboard in React Js, Redux, and Tailwind CSS with features like CRUD operations, authentication, otp verification, video and image upload, and search filter.",
   },
   {
     _id: 4,
@@ -150,8 +151,10 @@ export const companies = [
     role: "Official Student Ambassador",
     company: "MLSA - Beta",
     src: "/assets/experience/mlsa-beta.jpeg",
+    companyLink:
+    "https://mvp.microsoft.com/en-US/studentambassadors/profile/f4540d33-8818-46e4-8559-853827635316",
     description:
-      "From learning technical skills like Github, Github Copilot, Microsoft Azure etc to Non-technical skills like public speaking and event management, all contributed a lot ion development of my career and personality. - Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.",
+    "From learning technical skills like Github, Github Copilot, Microsoft Azure etc to Non-technical skills like public speaking and event management, all contributed a lot ion development of my career and personality. - Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.",
   },
   {
     _id: 5,
@@ -160,6 +163,7 @@ export const companies = [
     role: "Frontend Lead",
     company: "Friska",
     src: "/assets/experience/friska.jpeg",
+    companyLink: "https://www.linkedin.com/company/friskanow/",
     description:
       "I designed and developed the whole frontend of Friska from scratch on React Js, and Figma designs. This experience has not only developed my experience with frontend development but also helped me to understand more about the work culture of a startup.",
   },

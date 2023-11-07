@@ -23,7 +23,7 @@ const Experience = () => {
                 <Heading name="Expereince" />
 
             </div>
-            <div className="w-full m-2">
+            <div className="w-full md:m-2">
                 <div className=" w-full rounded-2xl bg-white p-2">
                     <Accordion type="single" collapsible className="mt-2 ">
                         {companies.map((item, index) => {
@@ -42,13 +42,17 @@ const Experience = () => {
                                                     </Link>
                                                 )}
                                             </div>
-                                            {item.role}
+                                            <p className="font-medium text-left">
+
+                                                {item.role}
+                                            </p>
+
                                         </div>
                                     </AccordionTrigger>
                                     <AccordionContent>
-                                        <div className='w-full flex items-center justify-between mt-2'  >
-                                            <Link target="_blank" className='hover:underline font-bold text-lg' href={(!item.companyLink) ? "/" : item.companyLink} >{item.company} </Link>
-                                            <div>
+                                        <div className='w-full flex md:flex-row flex-col md:items-center items-left justify-between mt-2'  >
+                                            <Link target="_blank" className='hover:underline font-bold text-black text-sm md:text-lg' href={(!item.companyLink) ? "/" : item.companyLink} >{item.company} </Link>
+                                            <div className="text-sm md:text-md text-black">
                                                 {item.startDate} - {(!item.endDate) ? "Present" : item.endDate}
                                             </div>
                                         </div>
@@ -56,7 +60,12 @@ const Experience = () => {
                                             {
                                                 descriptionLines.map((line, lineIndex) => (
 
-                                                    <li className='mt-1 list-disc' key={`line-${lineIndex}`}>{line}</li>
+                                                    <li className='mt-1 list-disc text-sm md:text-md text-black' key={`line-${lineIndex}`}>
+
+                                                        {line}
+
+
+                                                    </li>
                                                 ))}
                                         </ul>
                                     </AccordionContent>

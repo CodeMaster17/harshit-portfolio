@@ -22,9 +22,8 @@ const config: Config = {
       colors: {
         "color-white": "#ffffff", // Define your custom color here
         "color-black": "#000", // Define your custom color here
-        "highlighter": "#ADFA1D",
+        highlighter: "#ADFA1D",
         "color-gray": "#616161",
-     
       },
       boxShadow: {
         "box-shadow":
@@ -44,8 +43,16 @@ const config: Config = {
         xl: "30px",
         anchorHeading: "80px",
       },
+      screens: {
+        xs: "360px", // Extra small screens
+        sm: "640px", // Small screens, such as smartphones
+        md: "768px", // Medium screens, such as tablets
+        lg: "1024px", // Large screens, such as small laptops
+        xl: "1280px", // Extra-large screens, such as larger laptops and desktops
+        "2xl": "1536px", // Extra-extra-large screens, large desktops and beyond
+      },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 };
 export default config;
