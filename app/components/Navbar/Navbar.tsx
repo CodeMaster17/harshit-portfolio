@@ -7,8 +7,6 @@ import { FaLinkedinIn, FaInstagram, FaGithub } from 'react-icons/fa'
 const Navbar = () => {
     return (
         <>
-       
-
             <header className="text-gray-600 body-font w-full bg-white  shadow-box-shadow top-0 md:sticky z-10  md:block ">
                 <div className="container mx-auto flex flex-col md:flex-row flex-wrap p-5  justify-between  items-center">
                     <div className='flex flex-col md:flex-row justify-center md:justify-between gap-8 items-center'>

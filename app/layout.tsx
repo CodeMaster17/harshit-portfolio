@@ -1,33 +1,15 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter, Montserrat, Dancing_Script } from 'next/font/google'
 import Navbar from './components/Navbar/Navbar'
 import SidebarDark from './components/Shared/Sidebar/page'
 import Head from 'next/head'
+import React from 'react'
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-inter'
-
-})
-const dancingScript = Dancing_Script({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700',],
-  variable: '--font-dancingScript'
-
-})
-
-const montserrat = Montserrat({
-  subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  variable: '--font-inter'
-})
 
 export const metadata: Metadata = {
   title: 'Harshit Yadav',
   description: 'Software Engineer who loves to develop software and solutions which can solve people problems.',
-  
+
 }
 
 export default function RootLayout({
@@ -40,8 +22,8 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="/assets/my-app.ico" />
       </Head>
-      <body className={`${montserrat.variable} ${dancingScript.variable}`}>
-        <div className='w-full flex bg-color-white'>
+      <body >
+        <div className='flex w-full bg-color-white'>
           <SidebarDark />
           <div className='w-full '>
             <Navbar />

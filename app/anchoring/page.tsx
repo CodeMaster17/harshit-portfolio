@@ -40,12 +40,11 @@ const Anchoring = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className=" my-8 flex flex-col items-center justify-center  gap-8 md:flex-row ">
                     {anchoring.map((item, index) => {
                         return (
-                            <>
-                                <div className={`${styles.card}`}>
+                            
+                                <div className={`${styles.card}`} key={index}>
                                     <Image
                                         src={item.imgUrl}
                                         alt=""
@@ -61,7 +60,7 @@ const Anchoring = () => {
                                     </div>
                                 </div>
 
-                            </>
+                            
                         )
                     })}
 

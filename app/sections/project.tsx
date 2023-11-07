@@ -10,10 +10,8 @@ import {
 } from "../../components/ui/accordion"
 import Link from 'next/link'
 import Image from 'next/image'
-import { BiLinkExternal, BiLogoReact } from 'react-icons/bi'
+import { BiLinkExternal } from 'react-icons/bi'
 import { AiOutlineGithub } from 'react-icons/ai'
-import IconLoader from '../components/iconLoader'
-
 
 const Projects = () => {
 
@@ -21,82 +19,84 @@ const Projects = () => {
 
     return (
         <>
-            <div className='w-full shadow-box-shadow  p-4 bg-color-white rounded-[5px] '>
+            <div className='w-full rounded-[5px]  bg-color-white p-4 shadow-box-shadow '>
                 <div className='flex gap-2 border-b-2 pb-2'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ADFA1D" viewBox="0 0 24 24" strokeWidth={1} stroke="black" className="w-7 h-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="#ADFA1D" viewBox="0 0 24 24" strokeWidth={1} stroke="black" className="h-7 w-7">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
                     </svg>
 
                     <Heading name="Projects" />
                 </div>
-                <div className="w-full mt-2  ">
+                <div className="mt-2 w-full  ">
                     <div className=" w-full rounded-2xl bg-white p-2">
                         <Accordion type="single" collapsible key="index" className="mt-2 ">
                             {projects.map((item, index) => {
                                 return (
+                                    <div key={item.id}>
 
-                                    <AccordionItem value={`item-${index}`} className='shadow-box-shadow px-2 rounded-md mt-2' key={item.id} >
-                                        <AccordionTrigger className='flex hover:no-underline'>
-                                            <div className='flex items-center gap-4'>
-                                                <div className='w-[30px] h-[30px]  rounded-sm '>
-                                                    {item.imageSrc && (
-                                                        <Link target='_blank' href={(!item.link) ? "/" : item.link}>
-                                                            <Image alt="image" src={item.imageSrc} className='w-full rounded-sm h-full' width={100} height={100} />
-                                                        </Link>
-                                                    )}
+                                        <AccordionItem value={`item-${index}`} className='mt-2 rounded-md px-2 shadow-box-shadow' key={item.id} >
+                                            <AccordionTrigger className='flex hover:no-underline'>
+                                                <div className='flex items-center gap-4'>
+                                                    <div className='h-[30px] w-[30px]  rounded-sm '>
+                                                        {item.imageSrc && (
+                                                            <Link target='_blank' href={(!item.link) ? "/" : item.link}>
+                                                                <Image alt="image" src={item.imageSrc} className='h-full w-full rounded-sm' width={100} height={100} />
+                                                            </Link>
+                                                        )}
+                                                    </div>
+                                                    <p className='text-left text-black'>
+
+                                                        {item.title}
+                                                    </p>
+
                                                 </div>
-                                                <p className='text-black text-left'>
+                                            </AccordionTrigger>
+                                            <AccordionContent>
+                                                <p className='px-4 text-left'>
 
-                                                    {item.title}
+                                                    {item.description}
                                                 </p>
+                                                <br />
+                                                <div className=' flex w-full items-center  justify-between px-4'>
+                                                    <div className='flex w-3/4 flex-wrap gap-2'  >
+                                                        {item.subtitle.map((icon, index) => {
+                                                            return (
 
-                                            </div>
-                                        </AccordionTrigger>
-                                        <AccordionContent>
-                                            <p className='px-4 text-left'>
-
-                                                {item.description}
-                                            </p>
-                                            <br />
-                                            <div className=' w-full flex justify-between  items-center px-4'>
-                                                <div className='w-3/4 flex flex-wrap gap-2'  >
-                                                    {item.subtitle.map((icon, index) => {
-                                                        return (
-                                                            <>
-                                                                <div key={index} className=' text-black p-2 flex justify-center items-center  bg-slate-300 rounded-sm'>
+                                                                <div key={index} className=' flex items-center justify-center rounded-sm bg-slate-300  p-2 text-black'>
                                                                     {icon}
                                                                 </div>
-                                                            </>
-                                                        )
-                                                    }
-                                                    )}
-                                                </div>
 
-                                                <div className='flex w-1/4 justify-end gap-4 items-center'>
+                                                            )
+                                                        }
+                                                        )}
+                                                    </div>
 
-                                                    {item.githubLink &&
+                                                    <div className='flex w-1/4 items-center justify-end gap-4'>
 
-                                                        <Link href={item.githubLink} className='flex gap-5' >
-                                                            <AiOutlineGithub
-                                                                size={26}
-                                                                className="cursor-pointer hover:bg-[#ADFA1D] rounded-full"
+                                                        {item.githubLink &&
+
+                                                            <Link href={item.githubLink} className='flex gap-5' >
+                                                                <AiOutlineGithub
+                                                                    size={26}
+                                                                    className="cursor-pointer rounded-full hover:bg-[#ADFA1D]"
+                                                                />
+                                                            </Link>
+                                                        }
+                                                        <Link href={item.link} target="_blank" className='flex gap-5' >
+                                                            <BiLinkExternal
+                                                                size={24}
+                                                                className="cursor-pointer rounded-full hover:bg-[#ADFA1D]"
                                                             />
                                                         </Link>
-                                                    }
-                                                    <Link href={item.link} target="_blank" className='flex gap-5' >
-                                                        <BiLinkExternal
-                                                            size={24}
-                                                            className="cursor-pointer hover:bg-[#ADFA1D] rounded-full"
-                                                        />
-                                                    </Link>
+                                                    </div>
                                                 </div>
-                                            </div>
 
 
-                                        </AccordionContent>
-                                    </AccordionItem>
+                                            </AccordionContent>
+                                        </AccordionItem>
 
+                                    </div>
                                 )
                             })}
                         </Accordion >

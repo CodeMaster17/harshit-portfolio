@@ -1,22 +1,9 @@
 import {
   AiOutlineUser,
-  AiOutlineHeart,
-  AiOutlineUserAdd,
-  AiOutlineAppstoreAdd,
 } from "react-icons/ai";
-import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
-import { HiPhotograph } from "react-icons/hi";
+
 import { GiMicrophone } from "react-icons/gi";
-import {
-  MdOutlineDashboard,
-  MdComputer,
-  MdCall,
-  MdDownhillSkiing,
-} from "react-icons/md";
-import { RiSettings4Line } from "react-icons/ri";
-import { TbReportAnalytics } from "react-icons/tb";
-import { PiMedalFill } from "react-icons/pi";
-import { BsBuilding } from "react-icons/bs";
+
 
 export const INSTAGRAM_URL = "https://www.instagram.com/harshit._._.yadav/";
 export const GITHUB_URL = " https://github.com/CodeMaster17";
