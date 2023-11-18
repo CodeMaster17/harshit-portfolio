@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Inter&family=Poppins:wght@300&family=Vina+Sans&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 p {
     color: black;
-    
-    
+}
+
+@layer base {
+    :root {
+        --font-poppins: 'Poppins', sans-serif;
+        --font-dancingScript: 'Dancing Script', cursive;
+    }
 }
 
 @layer utilities {

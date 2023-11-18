@@ -8,10 +8,10 @@ import NavigationButton from './sections/navigatiobButton'
 
 export default function Home() {
   return (
-    <div className='w-full font-inter'>
-      <div className='flex flex-col md:flex-row w-full md:w-[80%] mx-auto gap-8  p-2 md:p-6 rounded-[10px]'>
-        <div className='flex flex-col md:w-1/2  w-full  gap-8'>
-          <div className='w-full flex flex-col gap-8'>
+    <div className='w-full font-poppins'>
+      <div className='mx-auto flex w-full flex-col gap-8 rounded-[10px] p-2  md:w-[80%] md:flex-row md:p-6'>
+        <div className='flex w-full flex-col  gap-8  md:w-1/2'>
+          <div className='flex w-full flex-col gap-8'>
             <About />
             <NavigationButton />
             <Projects />
@@ -20,7 +20,7 @@ export default function Home() {
             <Education />
           </div>
         </div>
-        <div className='flex flex-col w-full md:w-1/2 gap-8'>
+        <div className='flex w-full flex-col gap-8 md:w-1/2'>
           <div>
             <Skills />
           </div>

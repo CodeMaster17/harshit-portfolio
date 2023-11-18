@@ -1,9 +1,6 @@
-import {
-  AiOutlineUser,
-} from "react-icons/ai";
+import { AiOutlineUser } from "react-icons/ai";
 
 import { GiMicrophone } from "react-icons/gi";
-
 
 export const INSTAGRAM_URL = "https://www.instagram.com/harshit._._.yadav/";
 export const GITHUB_URL = " https://github.com/CodeMaster17";
@@ -102,7 +99,7 @@ export const companies = [
   {
     _id: 1,
     startDate: " August 2023",
-    endDate: "",
+    endDate: "November 2023",
     role: "Software Engineer Intern",
     company: "SYMB Technologies",
     companyLink: "//symbtechnologies.com/",
@@ -129,7 +126,7 @@ export const companies = [
     company: "Yaro",
     src: "/assets/experience/yaro.jpeg",
     description:
-    "Developed Admin Dashboard in React Js, Redux, and Tailwind CSS with features like CRUD operations, authentication, otp verification, video and image upload, and search filter.",
+      "Developed Admin Dashboard in React Js, Redux, and Tailwind CSS with features like CRUD operations, authentication, otp verification, video and image upload, and search filter.",
   },
   {
     _id: 4,
@@ -139,9 +136,9 @@ export const companies = [
     company: "MLSA - Beta",
     src: "/assets/experience/mlsa-beta.jpeg",
     companyLink:
-    "https://mvp.microsoft.com/en-US/studentambassadors/profile/f4540d33-8818-46e4-8559-853827635316",
+      "https://mvp.microsoft.com/en-US/studentambassadors/profile/f4540d33-8818-46e4-8559-853827635316",
     description:
-    "From learning technical skills like Github, Github Copilot, Microsoft Azure etc to Non-technical skills like public speaking and event management, all contributed a lot ion development of my career and personality. - Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.",
+      "From learning technical skills like Github, Github Copilot, Microsoft Azure etc to Non-technical skills like public speaking and event management, all contributed a lot ion development of my career and personality. - Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.Learning and growing with like minded people is the best way to grow with this fast paced world, so I am too focusing on growing with one of the best community of people.",
   },
   {
     _id: 5,
@@ -167,6 +164,17 @@ export const projects = [
     linkState: true,
     githubLink: "",
     link: "https://dev-overflow-dqh0gdcm8-codemaster17.vercel.app/",
+  },
+  {
+    id: 1,
+    subtitle: ["Next Js"],
+    title: "KoinX - Your Tax Calucaltor",
+    description:
+      "KoinX is a tax calculator, which helps you to calculate your tax from your tax details. It is developed with Next Js, and Tailwind CSS, and deployed on Vercel.",
+    imageSrc: "/assets/projeccts/koinX.svg",
+    linkState: true,
+    githubLink: "",
+    link: "https://koin-7mnm0hjrx-codemaster17.vercel.app/",
   },
   {
     id: 1,

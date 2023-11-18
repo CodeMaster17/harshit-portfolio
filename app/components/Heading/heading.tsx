@@ -9,7 +9,7 @@ const Heading: React.FC<props> = ({ name }) => {
     return (
         <>
 
-            <p className='font-semibold text-2xl'>{name}</p>
+            <p className='text-2xl font-semibold '>{name}</p>
 
         </>
     )

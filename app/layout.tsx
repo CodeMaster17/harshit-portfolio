@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Harshit Yadav',
   description: 'Software Engineer who loves to develop software and solutions which can solve people problems.',
 
+
 }
 
 export default function RootLayout({
@@ -21,6 +22,12 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="icon" href="/assets/my-app.ico" />
+        <link
+          rel="icon"
+          href="/public/assets/my-app.ico"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
       </Head>
       <body >
         <div className='flex w-full bg-color-white'>

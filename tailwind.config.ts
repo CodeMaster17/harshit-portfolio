@@ -16,7 +16,7 @@ const config: Config = {
           "linear-gradient(0deg, rgba(0,0,0,1) 50%, rgba(255,186,10,0) 100%);",
       },
       fontFamily: {
-        inter: ["var(--font-inter)"],
+        poppins: ["var(--font-poppins)"],
         dancingScript: ["var(--font-dancingScript)"],
       },
       colors: {
