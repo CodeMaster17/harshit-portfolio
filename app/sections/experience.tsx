@@ -51,7 +51,8 @@ const Experience = () => {
                                     </AccordionTrigger>
                                     <AccordionContent>
                                         <div className='items-left mt-2 flex w-full flex-col justify-between md:flex-row md:items-center'  >
-                                            <Link target="_blank" className='text-sm font-bold text-black hover:underline md:text-lg' href={(!item.companyLink) ? "/" : item.companyLink} >{item.company} </Link>
+                                            <Link target="_blank" className='flex text-sm font-bold text-black hover:underline md:text-md' href={(!item.companyLink) ? "/" : item.companyLink} >{item.company}
+                                            </Link>
                                             <div className="text-sm text-black md:text-md">
                                                 {item.startDate} - {(!item.endDate) ? "Present" : item.endDate}
                                             </div>

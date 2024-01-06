@@ -157,13 +157,13 @@ export const projects = [
   {
     id: 2,
     subtitle: ["Next Js", "Tailwind CSS", "Shadcn/ui", "MongoDb", "Clerkjs"],
-    title: "DevExchange",
+    title: "Dev Discuss",
     description:
       "This platform developed with Next Js 13.5, Shadcn/Ui helps developers to ask question, post answers,  and even generate answers to their questions, alongwith  voting system for questions asked, helping to build user profile and get badges. It includes features like google, email authentication system with Clerk, code formatting, generating an AI answer, connecting and building like minded community (under development), finding jobs and even more.",
     imageSrc: "/assets/projeccts/dev-exchange.svg",
     linkState: true,
     githubLink: "",
-    link: "https://dev-overflow-dqh0gdcm8-codemaster17.vercel.app/",
+    link: "https://stack-queue.vercel.app/",
   },
   {
     id: 1,
